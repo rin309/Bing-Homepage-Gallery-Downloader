@@ -26,9 +26,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="Script.ps1" />
+    <Folder Include="Sample\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainScript.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sample\browsedata.js" />
+    <Content Include="Sample\browsedata.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
